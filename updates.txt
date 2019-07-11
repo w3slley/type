@@ -1,0 +1,18 @@
+07/03/2019 - 08:13
+I start this new update file with the notion that I'm experimenting with this new tool I'm building. It's a game where you have to type the phrase that appears to you the fastest you can. By now I already:
+	1) Created the rudimentary system that displays the phrase and the time you have left;
+	2) Know a little bit about how I will display random phrases and words;
+	3) Coded a basic front end for the web app.
+
+03/07/2019
+
+1)Implemented connection with an API to display quotes.
+2)Developed a rude system that tells the user the progress in the individual phrase and overall progress in all phrases.
+
+
+I still have to:
+	1) Implement a scoring system using PHP and MySQL;
+	2) Improve the looks of the front-end (fonts, images, etc);
+	3) Allow users to play online (don't know how to do it yet but will eventually figure it out);
+
+
