@@ -10,6 +10,13 @@ I start this new update file with the notion that I'm experimenting with this ne
 2)Developed a rude system that tells the user the progress in the individual phrase and overall progress in all phrases.
 
 
+31/08/2019
+1)Changed how the timer works. Now it is a decreasing timer. The user has a fixed amount of time to finish all the quotes. I'll probably find a more interesiting way to this.
+
+
+01/09/2019
+I'll use the knowledge acquire while building the chat application with socket.io to implement multiplayer gaming in the type game app. First I need to setup nodejs and express. Then I need to pass the progress of each player to the server and display it into the users' browser.
+
 I still have to:
 	1) Implement a scoring system using PHP and MySQL;
 	2) Improve the looks of the front-end (fonts, images, etc);
