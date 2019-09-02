@@ -17,9 +17,27 @@ I start this new update file with the notion that I'm experimenting with this ne
 01/09/2019
 I'll use the knowledge acquire while building the chat application with socket.io to implement multiplayer gaming in the type game app. First I need to setup nodejs and express. Then I need to pass the progress of each player to the server and display it into the users' browser.
 
+1)Implemented the system of progress for users to see.
+2)Implemented multiplayer for up to 3 users (as far as I tested). Now users can play multiplayer against each other!!! 
+3)Made so that users cannot copy the text of the page (to cheat and finish faster)
+
+I used the following code to achieve that:
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+I spend the whole day having a lot of problems. One I was having was about the server storing two version of the quotes and authors. I solved that by making sure only one user triggers one event that takes the data to the server. Otherwise it won't work.
+
+
+
 I still have to:
 	1) Implement a scoring system using PHP and MySQL;
 	2) Improve the looks of the front-end (fonts, images, etc);
-	3) Allow users to play online (don't know how to do it yet but will eventually figure it out);
+	3) Allow users to play online (don't know how to do it yet but will eventually figure it out). UPDATE: I did it using websockets!
+	4)Create multiple ways to play: against the clock, team death match and others.
+	
 
 

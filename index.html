@@ -7,24 +7,34 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="body">
-		<div class="progress">
+	<div class="username">
+		<h1 class="choose">Choose a username</h1>
+		    <form class="setUsername">
+		      <input class="user" autofocus type="text">
+		      <input type="submit" value="Submit">
+		    </form>
+	</div>
+	<div class="main">
+		<div class="body">
+			<div class="progress"></div>
 
+			<p class="word"></p>
+			<p style="text-align: right" class="author"></p>
+			<textarea spellcheck="false" class="input" type="text" autofocus></textarea>
+
+			<p class="text"></p>
+			<p class="timer"></p>
+			<button class='btnStart'>Start</button>
+
+			<div class="progress-input"></div>
 		</div>
-		<p class="word"></p>
-		<p style="text-align: right" class="author"></p>
-		<textarea spellcheck="false" id="input" type="text" autofocus></textarea>
-
-		<p id="text"></p>
-		<p class="timer"></p>
-		<button class='btnStart'>Start</button>
-		<button class='btnStop'>Stop</button>
-
-	</div>
-	<div class="progress-input">
-
+		<div class="dashboard"></div>
 	</div>
 
-	<script src="main.js"></script>
+
+
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
