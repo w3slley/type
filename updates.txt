@@ -31,13 +31,17 @@ I used the following code to achieve that:
 
 I spend the whole day having a lot of problems. One I was having was about the server storing two version of the quotes and authors. I solved that by making sure only one user triggers one event that takes the data to the server. Otherwise it won't work.
 
-
+05/09/2019
+1)Changed design of front-end and added font to the players span tag. I still have a lot of things to do, but this is a start.
 
 I still have to:
 	1) Implement a scoring system using PHP and MySQL;
 	2) Improve the looks of the front-end (fonts, images, etc);
-	3) Allow users to play online (don't know how to do it yet but will eventually figure it out). UPDATE: I did it using websockets!
+	3) Allow users to play online (don't know how to do it yet but will eventually figure it out). UPDATE: I did it using websockets! (DONE)
 	4)Create multiple ways to play: against the clock, team death match and others.
 	5)Improve the congratulation page after a user wins the game.
-	
+	6)Find a way to prevent from getting the problem of having multiple quotes arrays for each user - I have to elaborate on that later.
+	7)Create an authentication system that allows only registered users to play
+	8)Create rooms up to 4 players per game.
+	9)Implement a feature in which players have to all press the start button for the game to start.	
 
