@@ -18,7 +18,7 @@ I start this new update file with the notion that I'm experimenting with this ne
 I'll use the knowledge acquire while building the chat application with socket.io to implement multiplayer gaming in the type game app. First I need to setup nodejs and express. Then I need to pass the progress of each player to the server and display it into the users' browser.
 
 1)Implemented the system of progress for users to see.
-2)Implemented multiplayer for up to 3 users (as far as I tested). Now users can play multiplayer against each other!!! 
+2)Implemented multiplayer for up to 4 users (as far as I tested). Now users can play multiplayer against each other!!! 
 3)Made so that users cannot copy the text of the page (to cheat and finish faster)
 
 I used the following code to achieve that:
@@ -38,6 +38,6 @@ I still have to:
 	2) Improve the looks of the front-end (fonts, images, etc);
 	3) Allow users to play online (don't know how to do it yet but will eventually figure it out). UPDATE: I did it using websockets!
 	4)Create multiple ways to play: against the clock, team death match and others.
+	5)Improve the congratulation page after a user wins the game.
 	
-
 

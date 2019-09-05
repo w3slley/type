@@ -1,10 +1,10 @@
 const socket = io()
-let count = 60 //Changed to a decreasing timer.
-let c = 0
+//let count = 60 //Changed to a decreasing timer.
+let c = 0 //variable which is increased to display notes in the page
 //var firstLevel = ['porta', 'cadeira', 'palavra', "era uma casa muito engraçada", 12345, "era uma vez", "um lugar tão, tão distante", "eu consigo voar", "cada macaco no seu galho", "filho de peixe, peixinho é"];
 
 
-function getTotalCharOfQuotes(arr){
+function getTotalCharOfQuotes(arr){//function that gets total number of characters in all the quotes that are going to be displayed
 	num = 0
 	for(let i=0;i<arr.length;i++){
 		for(let j=0;j<arr[i].length;j++){
@@ -13,7 +13,7 @@ function getTotalCharOfQuotes(arr){
 	}
 	return num
 }
-function getQuotes(){
+function getQuotes(){//function that gets the data from quotes API and sends to server via websockets
 	/*
 	*API CALL
 	*/
@@ -51,15 +51,15 @@ function getQuotes(){
 
 
 
-$('.btnStart').click(function(){//when clicked
-	getQuotes()
-	socket.emit('start')
+$('.btnStart').click(function(){//when clicked in the start button
+	getQuotes() //function is activated and quote is stored in the server
+	socket.emit('start') //starts an event for the beginning of the game
 
 })
 
 //INTERACTION WITH SERVER
 //Starting game
-socket.on('start', ()=>{
+socket.on('start', ()=>{//event that removes the button and displays the text and input
 
 	$('.input').focus()
 	//var t = counter(count)
@@ -71,7 +71,7 @@ socket.on('start', ()=>{
 	//timer.style.display = 'block'
 })
 
-socket.on('get quotes', (quotesServer)=>{
+socket.on('get quotes', (quotesServer)=>{//function that gets quotes and authors from the server and implements logic
 
 	let quotes = quotesServer.quotes
 	let authors = quotesServer.authors
