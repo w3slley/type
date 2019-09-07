@@ -119,3 +119,17 @@ body {
 	height: 20px;
 	background-color: rgb(29, 161,242);
 }
+.winner{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 80%;
+	height: 50px;
+	font-size: 70px;
+	color: white;
+	text-align: center;
+	font-family: Orbitron;
+}

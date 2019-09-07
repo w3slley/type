@@ -155,8 +155,7 @@ socket.on('user progress', (data)=>{
 
 })
 socket.on('game over', (winner)=>{
-	$('.main').text(winner+' won the game!!!')
-
+	$('.main').html('<div class="winner">'+winner+' won the game!</div>')
 })
 
 socket.on('left', (username)=>{
