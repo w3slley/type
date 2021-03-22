@@ -46,15 +46,15 @@ io.on('connection', (socket)=>{
     io.emit('user progress', {progress: progress*100,username: socket.username})
   })
 
-    socket.on('disconnect', ()=>{
-      io.emit('left', socket.username)
-      users = deleteUser(users, socket.username)
-      console.log(users)
-    })
+  socket.on('disconnect', ()=>{
+    io.emit('left', socket.username)
+    users = deleteUser(users, socket.username)
+    console.log(users)
+  })
 
-    socket.on('game over',()=>{
-      io.emit('game over', socket.username)
-    })
+  socket.on('game over',()=>{
+    io.emit('game over', socket.username)
+  })
 })
 
 http.listen(3000, ()=>{
